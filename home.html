@@ -2,7 +2,7 @@
 title: Cotizador de pedidos automático
 description: Una herramienta para recibir presupuestos de proveedores, elegir los mejores precios, revisar cuánto se debería pedir y realizar los pedidos de manera automática
 published: true
-date: 2025-06-11T22:11:39.162Z
+date: 2025-06-11T22:13:08.197Z
 tags: 
 editor: code
 dateCreated: 2025-06-09T21:44:53.833Z
@@ -51,7 +51,7 @@ dateCreated: 2025-06-09T21:44:53.833Z
 </figure>
 <p>En la esquina inferior derecha se muestra un recuadro con la información que varía entre cada pedido.</p>
 <figure class="image"><img src="/info_pedidos.png"></figure>
-<h3>Cambio de múltiplo</h3>
+<h3 id="cambioMultiplo">Cambio de múltiplo</h3>
 <p>Es posible cambiar el múltiplo que se pedirá haciendo <strong>doble clic </strong>sobre un artículo de la lista. Esto mostrará un cuadro de diálogo con:</p>
 <ol>
   <li>La información general del artículo en la parte superior</li>
@@ -69,7 +69,7 @@ dateCreated: 2025-06-09T21:44:53.833Z
 </figure>
 <p>Después de la validación de la información de los pedidos, se valida que los múltiplos cotizados correspondan con los múltiplos que fueron configurados para el cálculo de cuánto pedir. En caso de que existan artículos donde no se cumpla, se mostrará la ventana para confirmar o modificar el múltiplo para los pedidos:</p>
 <figure class="image"><img src="/corregir_multiplo.png"></figure>
-<p>Otra validación que ocurre antes de enviar los pedidos es una comparación entre el costo base y el costo del proveedor. Cuando estos costos difieran por más de la mitad del costo base, se añadirá el artículo a una lista de revisión:</p>
+<p id="listasValidaciones">Otra validación que ocurre antes de enviar los pedidos es una comparación entre el costo base y el costo del proveedor. Cuando estos costos difieran por más de la mitad del costo base, se añadirá el artículo a una lista de revisión:</p>
 <figure class="image"><img src="/costos-irregulars.png">
   <figcaption>Al hacer doble clic en cualquiera de los artículos de la lista de revisión, se mostrarán los registros relacionados en el cotizador.</figcaption>
 </figure>
@@ -83,7 +83,7 @@ dateCreated: 2025-06-09T21:44:53.833Z
 <h2>Registro de cambios</h2>
 <p>2025 – junio – 09 (Versión 15-280)</p>
 <ul>
-  <li>Ahora las validaciones de costo base y disponibilidad del proveedor no se realizan artículo por artículo, sino que se muestran <a href="http://192.168.9.83/?page_id=901#listasValidaciones">listas de inconsistencia</a>.</li>
+  <li>Ahora las validaciones de costo base y disponibilidad del proveedor no se realizan artículo por artículo, sino que se muestran <a href="#listasValidaciones">listas de inconsistencia</a>.</li>
 </ul>
 <p>2025 – mayo – 12</p>
 <ul>
@@ -96,6 +96,6 @@ dateCreated: 2025-06-09T21:44:53.833Z
       <li>La cantidad a pedir excede la disponibilidad de un proveedor</li>
     </ul>
   </li>
-  <li>Se añade la función para <a href="http://192.168.9.83/?page_id=901#cambioMultiplo">cambiar el múltiplo para el pedido final</a>.</li>
+  <li>Se añade la función para <a href="#cambioMultiplo">cambiar el múltiplo para el pedido final</a>.</li>
 </ul>
 <p>&nbsp;</p>
