@@ -1,0 +1,142 @@
+---
+title: Cotizador de pedidos automático
+description: Una herramienta para recibir presupuestos de proveedores, elegir los mejores precios, revisar cuánto se debería pedir y realizar los pedidos de manera automática
+published: true
+date: 2025-06-11T18:50:11.277Z
+tags: 
+editor: markdown
+dateCreated: 2025-06-09T21:44:53.833Z
+---
+
+# Cotizador de pedidos automático
+
+## 1\. Obtener la lista de precios para cotizar
+
+El cotizador de pedidos automático funciona a partir de una lista de artículos generada por el calculador de pedidos manual:
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image.png)
+
+Normalmente se utilizarán los filtros de cálculo global, resultados que requieren reorden y solo productos cotizables.
+
+---
+
+Después de presionar el botón mostrar, se podrán añadir al **nuevo pedido** las presentaciones necesarias, usando los botones de la parte derecha:
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-1.png)
+
+---
+
+Una vez añadidas algunas presentaciones, la **plantilla de Lista de precios para cotizar** se obtiene presionando la tecla **F7.**
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-2.png)
+
+## 2\. Selección de los proveedores cotizables
+
+Para que un proveedor pueda añadirse a una cotización, primero debe **marcarse como cotizable**. Esto se puede lograr al seleccionar el proveedor en ***Catálogos → Clientes y proveedores → Proveedores***
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-4.png)
+
+## 3\. Concentrado de cotizaciones
+
+Una vez que se han establecido algunos proveedores como cotizables, se puede obtener una plantilla para la cotización a través de ***Compras → Cotizador de pedidos automáticos*** 
+
+Para ello es necesario primero cargar los artículos, usando la **lista de precios para cotizar** obtenida en el paso 1. Presionando el botón **“Cargar artículos”**
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-5.png)
+
+![](http://192.168.9.83/wp-content/uploads/2025/04/image-15-1024x585.png)
+
+Los artículos cuyo múltiplo no corresponda al múltiplo que el **calculador de pedidos automático** elige como **múltiplo a pedir** o los que **no** aparezcan el en calculador de pedidos manual (global global) se mostrarán en color rojo.
+
+Ya que se han cargado algunos artículos, se puede obtener el concentrado usando el botón **“Obtener plantilla vacía”**
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-6.png)
+
+Al presionar este botón aparecerá una lista con todos los **proveedores cotizables**, de los cuáles podremos seleccionar los que aparecerán en esta cotización.
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-8.png)
+
+El concentrado se divide en 4 secciones:
+
+1.  **Columnas para artículos:** Muestra la información esencial de los artículos que se cotizarán.
+2.  **Columnas de costos:** En ellas se establece el costo establecido por cada uno de los proveedores, para cada uno de los artículos.
+3.  **Columnas de decisión:** En ellas deben aplicarse fórmulas para encontrar el mejor costo y el proveedor de este. Es realmente importante que en estas columnas los valores sean **idénticos que en las columnas de costos.** También se muestra la sugerencia de cuánto pedir realizada por el sistema en el momento de la obtención del concentrado y el **pedido final,** que es la cantidad de ese artículo que se ha decidido pedir al proveedor.
+4.  **Columnas de anotaciones y disponibilidad:** Se usan para conocer los comentarios del proveedor sobre cada uno de los productos y la cantidad que puede vender en la actualidad.
+
+## 4\. Carga de concentrado
+
+Una vez que se ha situado la información en el concentrado, esta se puede importar al sistema usando el botón **Cargar cotización.**
+
+![](http://192.168.9.83/wp-content/uploads/2025/03/image-9.png)
+
+## 5\. Información de los pedidos
+
+Una vez que se ha establecido qué artículos se pedirán a qué proveedor, es posible identificar en qué pedido se encuentra un artículo seleccionándolo en cualquiera de las dos listas.
+
+![](http://192.168.9.83/wp-content/uploads/2025/04/image-3.png)
+
+El artículo seleccionado y los pedidos en los que éste se encuentra se resaltan de color **rosa**.
+
+En la esquina inferior derecha se muestra un recuadro con la información que varía entre cada pedido.
+
+![](http://192.168.9.83/wp-content/uploads/2025/04/image-4.png)
+
+### Cambio de múltiplo
+
+Es posible cambiar el múltiplo que se pedirá haciendo **doble clic** sobre un artículo de la lista. Esto mostrará un cuadro de diálogo con:
+
+1.  La información general del artículo en la parte superior
+2.  La información del múltiplo cotizado (que es el que se pedirá) a la izquierda
+3.  La información del múltiplo a pedir a la derecha. El múltiplo a pedir puede estar vacío debido a las configuraciones
+4.  Las anotaciones, costos, disponibilidad y cantidad a pedir de ese producto todos los proveedores.
+
+![](http://192.168.9.83/wp-content/uploads/2025/05/image-1.png)
+
+## 6\. Guardar pedidos a proveedor
+
+Antes de poder enviar los pedidos, es necesario confirmar la información de los pedidos. Se debe utilizar el botón de check ✅ en cada uno de los pedidos.
+
+Al presionar el botón **Guardar pedidos** automáticamente se le indicará qué pedidos aún necesitan **confirmación** ✅
+
+![](http://192.168.9.83/wp-content/uploads/2025/04/image-2.png)
+
+Cuando se está en modo **guardar pedidos**, confirmar la información de un pedido nos llevará al siguiente que no ha sido confirmado automáticamente.
+
+Después de la validación de la información de los pedidos, se valida que los múltiplos cotizados correspondan con los múltiplos que fueron configurados para el cálculo de cuánto pedir. En caso de que existan artículos donde no se cumpla, se mostrará la ventana para confirmar o modificar el múltiplo para los pedidos:
+
+![](http://192.168.9.83/wp-content/uploads/2025/06/imagen.png)
+
+Otra validación que ocurre antes de enviar los pedidos es una comparación entre el costo base y el costo del proveedor. Cuando estos costos difieran por más de la mitad del costo base, se añadirá el artículo a una lista de revisión:
+
+![](http://192.168.9.83/wp-content/uploads/2025/06/imagen-2.png)
+
+Al hacer doble clic en cualquiera de los artículos de la lista de revisión, se mostrarán los registros relacionados en el cotizador.
+
+La última revisión que se realiza es la que verifica que la existencia del proveedor no excede la cantidad a pedir, si llegara a suceder se mostrará una lista con los artículos en los que esto sucede:
+
+![](http://192.168.9.83/wp-content/uploads/2025/06/imagen-3.png)
+
+Dar clic en “aceptar todo” significa que se ha revisado y aprueba que los pedidos se realicen con esta cantidad a pedir.
+
+Una vez que toda la información de los pedidos haya sido confirmada, se importarán los pedidos a proveedor y se mostrarán los folios de los pedidos creados:
+
+![](http://192.168.9.83/wp-content/uploads/2025/04/image-6.png)
+
+Dar dos clics rápidos al folio del Pedido permite revisar el pedido a Proveedor creado.
+
+## Registro de cambios
+
+2025 – junio – 09 (Versión 15-280)
+
+-   Ahora las validaciones de costo base y disponibilidad del proveedor no se realizan artículo por artículo, sino que se muestran [listas de inconsistencia](http://192.168.9.83/?page_id=901#listasValidaciones).
+
+2025 – mayo – 12
+
+-   Ahora la disponibilidad del proveedor permite números decimales
+-   El cálculo de cuánto pedir del cotizador ahora ignora otras configuraciones para respetar las existencias.
+-   Ahora se toman en cuenta las notas de crédito para el costo de la última compra.
+-   Ahora se resaltan celdas en color rojo para los casos en los que
+    -   La cantidad a pedir de un artículo es mayor a la sugerida por el cálculo de cuánto pedir
+    -   La diferencia del costo del proveedor y el costo base es mayor al 50% del costo base.
+    -   La cantidad a pedir excede la disponibilidad de un proveedor
+-   Se añade la función para [cambiar el múltiplo para el pedido final](http://192.168.9.83/?page_id=901#cambioMultiplo).
