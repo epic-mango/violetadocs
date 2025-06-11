@@ -1,0 +1,36 @@
+<!--
+title: Artículos activos por sucursal
+description: Este formulario ayuda a detectar productos con ventas o existencias, pero que no están activos en la sucursal.
+published: true
+date: 2025-06-11T22:45:51.003Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-06-11T22:45:51.003Z
+-->
+
+<h1>Artículos activos por sucursal</h1>
+<p>La funcionalidad del formulario de activos por sucursal se ha cambiado para parecerse más a sucursal activa del catálogo de artículos. Ahora en lugar de trabajar sucursal por sucursal, se puede trabajar de forma masiva entre las presentaciones y las sucursales.</p>
+<p>Para modificar una o varias presentaciones, deben seleccionarse en la tabla de resultados filtrados y presionar la tecla F7. Esto desplegará una ventana pidiendo elegir las sucursales donde estas presentaciones se activarán.</p>
+<figure class="image"><img src="/catalogos/articulos/activos_por_sucursal/seleccion-multiple.png"></figure>
+<p>&nbsp;</p>
+<p><strong>Nota: Es importante notar que todas las sucursales que aparezcan en la ventana de selección múltiple serán afectadas por este proceso. Si se desea evitar afectar ciertas sucursales, se pueden usar los filtros de empresa y sucursal para evitar que aparezcan en la lista.</strong></p>
+<p><strong>Ejemplo 1: </strong>Se activará en misión del valle y se desactivará en el resto de las sucursales:</p>
+<figure class="image"><img src="http://192.168.9.83/wp-content/uploads/2025/04/image-11.png" alt="" srcset="http://192.168.9.83/wp-content/uploads/2025/04/image-11.png 668w, http://192.168.9.83/wp-content/uploads/2025/04/image-11-300x264.png 300w" sizes="100vw" width="668"></figure>
+<p>Puedes notar que en los filtros no se ha seleccionado <strong>empresa o sucursal</strong>, por lo que <strong>todas</strong> las presentaciones seleccionadas modificarán su comportamiento en <strong>todas las sucursales</strong> que aparecen en la <strong>ventana de selección múltiple</strong>.</p>
+<p><strong>Ejemplo 2: </strong>Se activará en Block 2 y el resto de sucursales quedarán intactas.</p>
+<figure class="image"><img src="http://192.168.9.83/wp-content/uploads/2025/04/image-12.png" alt="" srcset="http://192.168.9.83/wp-content/uploads/2025/04/image-12.png 593w, http://192.168.9.83/wp-content/uploads/2025/04/image-12-300x296.png 300w" sizes="100vw" width="593"></figure>
+<p>Al usar los filtros de <strong>empresa y sucursal</strong> es posible respetar las configuraciones de otras sucursales y modificar solamente las que se han filtrado.</p>
+<p>Para afectar una presentación específica se puede usar el panel de la esquina superior derecha, que desplegará la ventana de selección múltiple al presionar el botón <strong>“Guardar”:</strong></p>
+<figure class="image"><img src="http://192.168.9.83/wp-content/uploads/2025/04/image-13-1024x392.png" alt="" srcset="http://192.168.9.83/wp-content/uploads/2025/04/image-13-1024x392.png 1024w, http://192.168.9.83/wp-content/uploads/2025/04/image-13-300x115.png 300w, http://192.168.9.83/wp-content/uploads/2025/04/image-13-768x294.png 768w, http://192.168.9.83/wp-content/uploads/2025/04/image-13.png 1352w" sizes="100vw" width="1024"></figure>
+<h2>Candidatos a agregar</h2>
+<p>Se han añadido filtros al formulario de candidatos a agregar:</p>
+<figure class="image"><img src="http://192.168.9.83/wp-content/uploads/2025/04/image-8.png" alt="" srcset="http://192.168.9.83/wp-content/uploads/2025/04/image-8.png 589w, http://192.168.9.83/wp-content/uploads/2025/04/image-8-300x36.png 300w" sizes="100vw" width="589"></figure>
+<p>Además el agregar, ya sea todos o una presentación seleccionada también desplegará la&nbsp; ventana de selección múltiple de sucursales. En el cuado de selección múltiple deberán seleccionarse las sucursales en las que se desee <strong>activar </strong>las presentaciones.</p>
+<h2>Registro de cambios</h2>
+<h3>2025-04-15 (versión 15-235)</h3>
+<ul>
+  <li>Ahora se muestran solamente las sucursales que pertenezcan a los filtros de empresa o sucursal en la tabla de resultados del reporte.</li>
+  <li>Se reparó el filtro de sucursal, ya que no se adaptaba a la empresa seleccionada.</li>
+  <li>Se corrigió un error que hacía que las presentaciones con paréntesis causaran un fallo al guardar.</li>
+</ul>
+<p>&nbsp;</p>
